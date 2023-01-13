@@ -1,0 +1,38 @@
+export const MenuItems=[
+    
+    {
+        title:'Vodka',
+        url:'/vodka',
+        cname:'nav-links',
+    },
+    {
+        title:'Gin',
+        url:'/gin',
+        cname:'nav-links',
+    },
+    {
+        title:'Tequila',
+        url:'/tequila',
+        cname:'nav-links',
+    },
+    {
+        title:'Whiskey',
+        url:'/whiskey',
+        cname:'nav-links',
+    },
+    {
+        title:'Brandy',
+        url:'/brandy',
+        cname:'nav-links',
+    },
+    {
+        title:'Rum',
+        url:'/rum',
+        cname:'nav-links',
+    },
+    {
+        title:'Vermouth',
+        url:'/vermouth',
+        cname:'nav-links',
+    },
+]

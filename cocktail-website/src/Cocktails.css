@@ -1,0 +1,28 @@
+.cocktail-list{
+    padding:0;
+    margin:0;
+    text-align: left;
+    font-size:80px;
+    padding-left:20px;
+}
+
+.cocktail-name{
+    display:block;
+    text-decoration: none !important;
+    color:#94504C;
+    /* color:rgb(56, 21, 21) */
+}
+
+.cocktail-heading{
+    text-align: left;
+    padding-left:20px;
+    font-size: 80px;
+    font-style:italic;
+}
+
+.cocktail-name:hover{
+    cursor:pointer;
+    color:#ffd8d6;
+    transition: ease-out 300ms;
+}
+

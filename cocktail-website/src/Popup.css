@@ -1,0 +1,83 @@
+.popup-box{
+    position:fixed;
+    left:60%;
+    bottom:10%;
+    width:35%;
+    height:80%;
+    background-color: #95404c;
+    border-radius: 4.86vw;
+}
+
+.hidden{
+    display:none;
+}
+
+.popup-header{
+    
+    font-size:3.47vw;
+    padding:0.89vw;
+    margin-top:3vw;
+    text-align:center;
+    background-color: #95404c;
+    border-radius: 4.86vw;
+}
+
+/* 
+.close-icon{
+    position:absolute;
+    top:5%;
+    left:85%;
+    
+} */
+
+.close-icon-popup{
+    position:absolute;
+    top:3%;
+    left:85%;
+    background-color: transparent;
+    
+}
+
+[class*="close-icon"]:hover{
+    cursor:pointer;
+}
+
+
+.slidein {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-timing-function: ease-out;
+
+  }
+
+  .slideout {
+    animation-duration: 0.5s;
+    animation-name: slideout;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:100%;
+      opacity: 50%;
+    }
+  
+    to {
+      margin-left:0%;
+      opacity: 100%;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      margin-left:0%;
+      opacity: 100%;
+    }
+  
+    to {
+      margin-left:100%;
+      opacity: 50%;
+    }
+  }
