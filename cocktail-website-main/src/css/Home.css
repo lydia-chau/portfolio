@@ -1,0 +1,271 @@
+html *{
+  /* background-color:rgb(110, 44, 44); */
+  background-color: #3B0D11;
+  color:white;
+  font-family: 'Playfair Display', serif;
+  margin:0;
+  padding:0;
+  /* overflow-x:hidden;
+  overflow-y:hidden; */
+
+}
+
+.body{
+  margin:30px;
+  margin-top:50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.App-header{
+  text-align:center;
+  position: relative;
+  margin:3.47vw;
+  margin-bottom: 4.86vw;
+  min-height:360px;
+
+}
+
+.header-slide-in{
+  animation-duration: 1s;
+  animation-name: header-slide-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+.header-slide-out{
+  animation-duration: 1s;
+  animation-name: header-slide-out;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.slide-in{
+  animation-duration: 1s;
+  animation-name: header-slide-in;
+  animation-timing-function: ease-out;
+  /* animation-delay: 2s; */
+  animation-fill-mode: backwards;
+
+}
+
+.slide-out{
+  animation-duration: 1s;
+  animation-name: header-slide-out;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes header-slide-in {
+  from{
+    opacity:50%;
+    transform: translate(-100%);        
+
+  }
+
+  to{
+    opacity:100%;
+  }
+}
+
+  @keyframes header-slide-out{
+    from{
+      opacity:100%;
+    }
+  
+    to{
+      opacity:0%;
+      transform: translate(100%); 
+    }
+  
+  
+}
+
+.hidden{
+  display:none;
+}
+
+.what-drink-header{
+  font-weight:700;
+  font-size: 4vw;
+  font-style:italic;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:45%;
+  background-color: transparent;
+}
+
+
+
+.cocktail-homepage-image{
+  height:30%;
+  width:30%;
+  border-radius:3.47vw;
+}
+
+.generate-button{
+  /* position: absolute;
+  top:45vh;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto; */
+  margin:0 auto;
+  height:7vw;
+  width:7vw;
+  border-radius: 4vw;
+  font-weight:700;
+  font-style:italic;
+  font-size:1vw;
+  border-style:none;
+  background-color: #F1EDEE;
+  color:black;
+  z-index:2;
+}
+
+.inside-cocktail{
+  position: absolute;
+  left: 25vw;
+  top: 29vw;
+}
+
+
+.generate-button:hover{
+  background-color:#8AA29E;
+  color:white;
+  cursor: pointer;
+  transition:ease-out 200ms;
+}
+
+
+.alcohols{
+  /* visibility: hidden; */
+  margin-left:8vw;
+  margin-right:8vw;
+  
+  position:relative;
+  display:grid;
+  /* width:1150px; */
+  height:31.25vw;
+  /* border-style:solid;
+  border-color: black; */
+  grid-template-columns: repeat(5,16vw);
+  grid-template-rows: repeat(3, 11vw);
+  grid-template-areas:  'a a c c c'
+                        'b d d d f'
+                        'e e e e f';
+}
+
+.alcohols a{
+  background-color: transparent;
+  color:#94504C;
+}
+
+.alcohols a:hover {
+  color:#ffd8d6;
+  cursor:pointer;
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
+}
+
+.Vodka{
+  grid-area: a;
+  font-size:10vw;
+  font-weight:900;
+  text-decoration: none !important;
+}
+
+.Gin{
+  font-size:8vw;
+  grid-area: b;
+  font-weight:400;
+  text-decoration: none !important;
+}
+
+.Tequila{
+  /* position:absolute; */
+  font-size:10vw;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-align:right;
+  grid-area: c;
+  text-decoration: none !important;
+
+}
+
+.Whiskey{
+  grid-area: d;
+  font-style:italic;
+  font-size:8.3vw;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-decoration: none !important;
+
+}
+
+.Brandy{
+  position:absolute;
+  bottom:-1.04vw;
+  /* left:70px; */
+  grid-area: e;
+  font-size:11.4vw;
+  font-weight: 400;
+  font-style:italic;
+  letter-spacing: 0.4em;
+  text-decoration: none !important;
+
+}
+
+.Rum{
+  position:absolute;
+  bottom:0.34vw;
+  left: 8vw;
+  font-size:4.86vw;
+  grid-area: f;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  text-decoration: none !important;
+
+}
+
+.text{
+  word-spacing:2.22vw;
+}
+
+.random-cocktail-homepage-card{
+  position:absolute;
+  top:-10%;
+  left:80%;
+  height:36vw;
+  width:26.87vw;
+  border-radius:3.86vw;
+  overflow-y:scroll;
+  background-color: #94504C;
+}
+
+
+.random-home-div{
+  position:absolute;
+  top:20%;
+  left:20%;
+  height:auto;
+  width:auto;
+  background-color: transparent;
+  z-index:1;
+  margin:2vw;
+  
+  
+}
+
+.cocktail-image-home{
+  /* position:absolute;
+  top:0;
+  left:15%; */
+  width:34.7vw;
+  height:34.7vw;
+  object-fit: cover;
+  border-radius:50%;
+}

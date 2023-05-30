@@ -1,0 +1,40 @@
+.cocktail-list{
+    padding:0;
+    margin:0;
+    text-align: left;
+    font-size:80px;
+    padding-left:20px;
+}
+
+.cocktail-name{
+    display:block;
+    border-style: none;
+    font-size:80px;
+    color:#94504C;
+    overflow-wrap:break-word;
+    text-align: left;
+    text-decoration: none !important;
+}
+
+.cocktail-heading{
+    text-align: left;
+    padding-left:20px;
+    font-size: 80px;
+    font-style:italic;
+}
+
+.cocktail-name:hover{
+    cursor:pointer;
+    color:#ffd8d6;
+    transition: ease-out 300ms;
+}
+
+@media screen and (max-width: 768px) {
+    .cocktail-heading{
+        font-size: 60px;
+    }
+    
+    .cocktail-name{
+        font-size:40px;
+    }
+}
